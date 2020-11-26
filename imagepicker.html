@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMAGE PICKER</title>
+</head>
+<body style="margin: 200px">
+
+	<center>
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="https://dailyspin.id/wp-content/uploads/2020/09/Logo-ML.png">PILIH KARAKTER</option>
+			<option value="https://img.mobilelegends.com/group1/M00/00/89/Cq2Ixlz4fd2AIeoOAAYWikaxwBc137.jpg">CLAUDE</option>
+			<option value="https://img.mobilelegends.com/group1/M00/00/8F/Cq2Ixl1D2jqAZQAdAAkgdCMxNtQ328.jpg">LYLIA</option>
+			<option value="https://img.mobilelegends.com/group1/M00/00/88/Cq2Ixlzj4R2AGt7YAAep4sY9-as919.jpg">FARAMIS</option>
+			<option value="https://img.mobilelegends.com/group1/M00/00/8A/Cq2Ixlz4jY-AWIsFAAgq0ZQ6A7E282.jpg">ANGELA</option>
+			<option value="https://img.mobilelegends.com/group1/M00/00/89/Cq2Ixlz4fdyAHB79AAXPFzfA0A4312.jpg">LEOMORD</option>
+			<option value="https://img.mobilelegends.com/group1/M00/00/8A/Cq2Ixlz4jBaAU1NPAAfcGpZUa0w480.jpg">CHANGE</option>
+		</select>
+	</center>
+		<br/>
+	<img src="https://dailyspin.id/wp-content/uploads/2020/09/Logo-ML.png" style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>
+
+</body>
+</html>
